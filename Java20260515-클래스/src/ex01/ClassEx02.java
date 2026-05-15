@@ -19,12 +19,12 @@ public class ClassEx02 {
 		int age3 = 18;
 		String phone3 = "010-4444-5555";
 		
-		MemberInfo(name1, age1, phone1);
+		memberInfo(name1, age1, phone1);
 		System.out.println("--------------");
-		MemberInfo(name2, age2, phone2);
+		memberInfo(name2, age2, phone2);
 		
 		System.out.println("--------------");
-		MemberInfo(name3, age3, phone3);
+		memberInfo(name3, age3, phone3);
 		
 		
 	}
@@ -34,7 +34,7 @@ public class ClassEx02 {
 	 * 매개변수: 문자열, 정수, 문자열
 	 * 반환타입: X
 	 */
-	static void MemberInfo(String name, int age, String phone) {
+	static void memberInfo(String name, int age, String phone) {
 		System.out.println("이름 : " + name);
 		System.out.println("나이 : " + age);
 		System.out.println("전화번호 : " + phone);
