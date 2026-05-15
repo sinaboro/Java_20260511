@@ -49,8 +49,42 @@ public class ArrayEx05 {
 		
 		System.out.println("총점 : " + sum);
 		System.out.println("평균 : " + avg);
+		System.out.println();
 		
 		//4. 배열 값 정렬(오름차순)
+		for(int i=0; i<number.length; i++) {
+			for(int j=0; j<number.length-1; j++) {
+				if(number[j] > number[j+1]) {
+					int tmp = number[j];
+					number[j] = number[j+1];
+					number[j+1] = tmp;
+				}
+			}
+		}
+		
+		for(int i=0; i<number.length; i++)
+			System.out.print(number[i] + " ");
+		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
