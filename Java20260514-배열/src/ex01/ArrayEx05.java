@@ -50,7 +50,7 @@ public class ArrayEx05 {
 		System.out.println("총점 : " + sum);
 		System.out.println("평균 : " + avg);
 		
-		
+		//4. 배열 값 정렬(오름차순)
 	}
 
 }
