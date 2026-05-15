@@ -13,13 +13,13 @@ public class ClassEx06 {
 		
 		
 		
-		//System.out.println(st1.name + ": ");
+		System.out.println(st1.getName() + ": ");
 		System.out.println("총점 : " + st1.total());
 		System.out.println("평균 : " + st1.avg());
 		
 		Student st2 = new Student("홍길동", 66, 34, 67);
 				
-		//System.out.println(st2.name + ": ");
+		System.out.println(st2.getName() + ": ");
 		System.out.println("총점 : " + st2.total());
 		System.out.println("평균 : " + st2.avg());
 	}
@@ -39,6 +39,9 @@ class Student {
 		math = m;
 	}
 	
+	String getName() {
+		return name;
+	}
 	//총점구하는 함수
 	int total() {
 		int sum = kor+eng+math;
