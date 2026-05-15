@@ -7,11 +7,7 @@ public class ClassEx03 {
 
 	public static void main(String[] args) {
 		
-		int age;
-		age = 20;
-		
-		int age2 = 20;
-		
+			
 		//객체 생성, 인스턴스 생성
 		Member hong = new Member(); 
 		hong.name = "홍길동";
