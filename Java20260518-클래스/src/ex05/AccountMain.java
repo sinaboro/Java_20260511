@@ -1,4 +1,4 @@
-package ex04;
+package ex05;
 
 /*
  * 생성자
