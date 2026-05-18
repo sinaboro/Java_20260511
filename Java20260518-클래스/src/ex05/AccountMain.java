@@ -23,6 +23,11 @@ public class AccountMain {
 		hong.deposit(10000);
 		hong.withdraw(7000);
 		System.out.println(hong.getName() + "님 현재 잔고: " + hong.getBalance());
+		
+		
+		Account kim = new Account(); //익명, 0
+		Account park = new Account(1000); //익명, 1000
+		Account su = new Account("유관순", 3000); //유관순, 3000
 	}
 
 }
@@ -33,18 +38,21 @@ class Account{
 	private String name;	
 
 	Account(){
+		this.name = "익명";
+		this.balance = 0;
+	}
+
+	Account(int balance){
+		this.balance = balance;
+		this.name = "익명";
 		
 	}
 
-	Account(int b){
-		balance = b;
+	Account(String name, int balance){
+		this.name = name;		
+		this.balance = balance;
 	}
-
-	Account(String n, int b){
-		name = n;
-		balance = b;		
-	}
-	
+		
 	String getName() {
 		return name;
 	}
