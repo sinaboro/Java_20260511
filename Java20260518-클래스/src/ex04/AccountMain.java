@@ -1,9 +1,9 @@
-package ex03;
+package ex04;
 
 /*
- * 멤버변수는 반드시 private로 외부 노출 금지!!
- * Setter, Getter
- * 
+ * 생성자
+ *  -> 자바는 객체를 생성하면 반드시 생성자가 호출된다!!
+ *  -> 생성자는 
  */
 public class AccountMain {
 
@@ -35,20 +35,6 @@ class Account{
 	//정보은닉, 멤버변수는 외부 공개하지 않는다!!!
 	private int balance = 0;
 	
-	/*
-	 * Getter -> 멤버변수값을 확인 하는 용도
-	 * Setter -> 멤버변수 값을 저장하는 용도
-	 */
-	
-	/*
-	 * Getter 생성 방법
-	 * getter는 함수로 생성
-	 * 반환타입 -> 멤버변수 자료형 이용
-	 * 함수이름 -> get + 멤버변수, 단 멤버변수 첫글자는 대문자, 카멜표기법
-	 * 매개변수 -> 없음
-	 */
-	
-	
 	public int getBalance() {
 		return balance;
 	}
@@ -57,23 +43,12 @@ class Account{
 		balance = b;
 	}
 	
-
-	/*
-	  * Setter 생성 방법
-	  * 반환타입 : void
-	  * 함수명 : set + 멤버변수명 -> 카멜표기법
-	  * 매개변수: (멤버변수 자료형)
-	  */
-	
-	
-	
 	void deposit(int amount) { //입금		
 		if(amount>0)
 			balance += amount;
 		else
 			System.out.println("마이너스는 입금 불가");
 	}
-	
 	
 
 	void withdraw(int amount) { //출금
