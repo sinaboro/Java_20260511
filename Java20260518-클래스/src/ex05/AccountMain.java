@@ -1,43 +1,28 @@
 package ex05;
 
 /*
- * 생성자
- *  - 자바는 객체를 생성하면 반드시 생성자가 호출된다!!
- *  - 생성자는 함수 일종..
- *  - 생성자 오버로딩 
- *  - 생성자를 생성하지않으면 디폴드 생성자를 자바에서 생성해줌
- *  - 생성자 생성 방법
- *  클래스명() : 클래스명+ 매개변수, 반환타입 없음.
- *  
- *  생성자 용도:
- *   - 멤버변수 초기화
- *   
- *   사용자가 생성자를 생성하지않으면
- *   자바는 디폴트 생성자를 만들어준다.
- *   단. 사용자가 생성자를 만들면, 디폴드 생성자는 만들어주지않는다.
- *    
+ * this 2가지 용도    
+ *  - this는 객체 자신을 가르킨다.
+ *  - 다른 생성자 호출
  */
 public class AccountMain {
 
 	public static void main(String[] args) {
 		
 		System.out.println("이순신 거래 내역");
-		Account lee = new Account(3000);
-		
-		//lee.setBalance(3000);
-		//lee.balance = -100000;
+		Account lee = new Account("이순신", 3000);
 		
 		lee.deposit(-15000);
 		lee.withdraw(8000);		
-		System.out.println("이순신 현재 잔고: " + lee.getBalance());
+		System.out.println( lee.getName() + "님 현재 잔고: " + lee.getBalance());
 		
 		System.out.println("------------------------------");
 		
 		System.out.println("홍길동 잔고 통장 입출금 내역");
-		Account hong  = new Account();
+		Account hong  = new Account("홍길동", 3000);
 		hong.deposit(10000);
 		hong.withdraw(7000);
-		System.out.println("홍길동 현재 잔고: " + hong.getBalance());
+		System.out.println(hong.getName() + "님 현재 잔고: " + hong.getBalance());
 	}
 
 }
@@ -45,7 +30,7 @@ public class AccountMain {
 class Account{
 	//정보은닉, 멤버변수는 외부 공개하지 않는다!!!
 	private int balance;
-	
+	private String name;	
 
 	Account(){
 		
@@ -54,6 +39,16 @@ class Account{
 	Account(int b){
 		balance = b;
 	}
+
+	Account(String n, int b){
+		name = n;
+		balance = b;		
+	}
+	
+	String getName() {
+		return name;
+	}
+	
 	
 	public int getBalance() {
 		return balance;
