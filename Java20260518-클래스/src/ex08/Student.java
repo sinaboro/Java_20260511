@@ -15,6 +15,10 @@ public class Student {
 	 */
 	static int studentCount = 0;
 	
+	public Student() {
+		
+	}
+	
 	Student(String name, int score){
 		this.name = name;
 		this.score = score;
