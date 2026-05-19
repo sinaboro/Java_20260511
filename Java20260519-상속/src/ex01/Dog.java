@@ -1,21 +1,12 @@
 package ex01;
 
-public class Dog {
+public class Dog extends Animal{
 
-	String name;
-	
-	public Dog(String name) {
-		this.name = name;
-	}
-	void eat() {
-		System.out.println(name + " 밥을 먹는다");
-	}
-	
-	void sleep() {
-		System.out.println(name + " 잠을 잔다");
+	public Dog() {
+		System.out.println("Dog 객체 생성");
 	}
 	
 	void bark() {
-		System.out.println(name + "가 멍멍 짓는다");
+		System.out.println("가 멍멍 짓는다");
 	}
 }
