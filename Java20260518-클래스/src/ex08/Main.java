@@ -7,6 +7,8 @@ public class Main {
 		Student s1 = new Student("까미", 95);
 		Student s2 = new Student("로이", 85);
 		Student s3 = new Student("뽀양", 77);
+		Student s4 = new Student();
+		
 
 		s1.showInfo();
 		
