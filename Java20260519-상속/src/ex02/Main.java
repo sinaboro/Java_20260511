@@ -14,6 +14,9 @@ public class Main {
 		c.meow();
 		c.eat();
 		c.sleep();
+		
+		
+		
 	}
 	
 }
