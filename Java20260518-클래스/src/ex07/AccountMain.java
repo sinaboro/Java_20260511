@@ -1,18 +1,17 @@
-package ex05;
+package ex07;
 
 /*
  * this 2가지 용도    
  *  - this는 객체 자신을 가르킨다.
  *  - 다른 생성자 호출
  */
-public class AccountMain {
+ public class AccountMain {
 
 	public static void main(String[] args) {
 		
 		System.out.println("이순신 거래 내역");
 		Account lee = new Account("이순신", 3000);
 		
-		//lee.setBalance(1000);
 		lee.deposit(-15000);
 		lee.withdraw(8000);		
 		System.out.println( lee.getName() + "님 현재 잔고: " + lee.getBalance());
@@ -35,18 +34,17 @@ public class AccountMain {
 
 class Account{
 	//정보은닉, 멤버변수는 외부 공개하지 않는다!!!
-	private int balance;
+	private int balance;  //멤버변수, 인스턴스 변수
 	private String name;	
+	
+	static int max = 100;  //클래스변수
 
 	Account(){
-		this.name = "익명";
-		this.balance = 0;
+		this("익명", 0);
 	}
 
 	Account(int balance){
-		this.balance = balance;
-		this.name = "익명";
-		
+		this("익명", balance);		
 	}
 
 	Account(String name, int balance){
@@ -63,20 +61,20 @@ class Account{
 		return balance;
 	}
 
-	public void setBalance(int b) {
-		balance = b;
+	public void setBalance(int balance) {
+		this.balance = balance;
 	}
 	
 	void deposit(int amount) { //입금		
 		if(amount>0)
-			balance += amount;
+			this.balance += amount;
 		else
 			System.out.println("마이너스는 입금 불가");
 	}
 	
 
 	void withdraw(int amount) { //출금
-		if(amount >balance) {
+		if(amount > balance) {
 			System.out.println("잔고부족 인출불가");
 		}else {		
 			balance -=amount;

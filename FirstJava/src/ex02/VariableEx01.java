@@ -11,7 +11,7 @@ package ex02;
  - 영문자 두 단어가 조합되있으면 첫글자, 두번째 단어 대문자
   예) saleorder -> SaleOrder
   스네이크표기법: -> 데이타베이스(오라클, mysql, maridb)
-  예) Sale_order
+  예) sale_order
  */
 
 public class VariableEx01 {
@@ -26,6 +26,7 @@ public class VariableEx01 {
 		 */
 		
 		int age;   //int:자료형, age:변수명(첫글자소문자&카멜표기법)
+	
 		age = 20;		
 		System.out.println("나이 : " + age);
 		

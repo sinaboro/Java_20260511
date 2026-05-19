@@ -25,7 +25,7 @@ public class IfEx02 {
 
 	public static void main(String[] args) {
 		
-		int age = 15;
+		int age = 25;
 		
 		if(age >= 20)
 			System.out.println("당신은 성인입니다.");
@@ -38,3 +38,25 @@ public class IfEx02 {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

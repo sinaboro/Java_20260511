@@ -25,7 +25,7 @@ public class IfEx03 {
 
 	public static void main(String[] args) {
 		
-		int jumsu = 95;
+		int jumsu = -5;
 		
 		if(jumsu >= 90) {
 			System.out.println("A학점");
@@ -46,3 +46,12 @@ public class IfEx03 {
 	}
 
 }
+
+
+
+
+
+
+
+
+

@@ -21,23 +21,31 @@ public class SampleEx {
 		 * 강제형변환 -> 큰 자료형을 작은 자료형 대입(값 손실 가능성 존재)
 		 */
 		
-		double d1  = 10.1;
+		double ex = 1.2 + 10;
+		
+		double douD  = 10.1;
 		float f1 = 10.1f;
 		
-		int a = 10;
+		int intA = 10;
 		int b = 3;
 	
 		//a = d1; 
 		
-		d1 = a;   
-		
-		d1 = f1;
+		douD = intA;   
 		
 		//f1 = d1;
-		f1 = (float)d1;
+		f1 =  (float)douD;
 		
-		System.out.println(a/b);
-		System.out.println(a/(double)b);
+		System.out.println(intA/b);
+		System.out.println(intA/(double)b);
+		
+		
+		int intB ;
+		long longA = 2500000000L;
+		
+		intB = (int)longA;
+		System.out.println(intB);
+		System.out.println(longA);
 		
 		
 	}

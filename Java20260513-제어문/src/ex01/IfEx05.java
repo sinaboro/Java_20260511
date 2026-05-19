@@ -19,10 +19,9 @@ public class IfEx05 {
 				System.out.println("합격");
 			else
 				System.out.println("불합격");
-				
-		}		
-		else
+		}else {
 			System.out.println("불합격");
+		}
 		
 					
 		System.out.println("프로그램 종료!!");

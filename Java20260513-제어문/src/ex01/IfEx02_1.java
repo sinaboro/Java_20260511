@@ -21,18 +21,35 @@ package ex01;
  *      
  * 
  */
-public class IfEx01 {
+public class IfEx02_1 {
 
 	public static void main(String[] args) {
 		
+		//조건연산자
+		
 		int age = 15;
 		
-		if(age >= 20)
-			System.out.println("당신은 성인입니다.");
+		String msg = (age >= 20) ? "성인" : "미성인";
 		
+		System.out.println("당신은 " + msg + "입니다.");
 		
 		System.out.println("프로그램 종료!!");
 
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

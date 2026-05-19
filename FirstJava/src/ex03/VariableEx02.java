@@ -7,8 +7,9 @@ public class VariableEx02 {
 		//산술연산 : + , - , *, /, %
 		//관계연산자: >, <, >=, <=
 		// ==, !=
+		// 정수 대 정수 -> 정수, 실수 대 정수 -> 실수, 실수 대 실수 -> 실수
 		
-		System.out.println(5 / 2.0); //2.5
+		System.out.println(5 / 2.); //2.5
 		System.out.println("5 % 2 나머지 : "+ 5 % 2);  //나머지 연산자, 1
 		
 		System.out.println(5<2);
@@ -48,9 +49,7 @@ public class VariableEx02 {
 		 * b = b+1
 		 * d = b;
 		 */
-		d = ++b;		
-		
-		
+		d = ++b;				
 		
 		System.out.println(b);
 		System.out.println(c);

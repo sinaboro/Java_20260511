@@ -13,10 +13,8 @@ public class WhileEx02 {
 			i++;
 			
 			if( i % 2 == 0)
-				//sum += i;
-				continue;
-			
-			sum += i;
+				sum += i;			
+		
 		}
 		
 		System.out.println("총합 : " + sum);

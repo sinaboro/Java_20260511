@@ -21,7 +21,7 @@ public class SwitchEx03 {
 			System.out.println("프로그램 종료!!");
 		 */
 		
-		int jumsu =90;
+		int jumsu =99;
 		
 		switch(jumsu/10) {
 			case 10:			

@@ -14,8 +14,7 @@ public class ForEx04 {
 			
 			for(int i=1; i<=9; i++) {
 				System.out.println(j + " X " + i + " = " +  j*i);
-				if(j == i)
-					break;
+				if(j == i)	break;
 			}
 			
 		}

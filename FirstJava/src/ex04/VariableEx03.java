@@ -6,12 +6,13 @@ public class VariableEx03 {
 
 	public static void main(String[] args) {		
 		
-		Scanner sc = new Scanner(System.in);
+		
+		Scanner sc = new Scanner(System.in);			
 
         // 초 입력 받기
         System.out.print("초를 입력하세요: ");
         int totalSeconds = sc.nextInt();
-
+        
         // 1시간 = 3600초
         int hour = totalSeconds / 3600;
 
