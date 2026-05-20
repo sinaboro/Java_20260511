@@ -11,12 +11,8 @@ public class FunctionEx03 {
 		
 		int a = 3;
 		int b = 2;
-	
-//		FunctionEx03 f3 = new FunctionEx03();		
-//		int total = f3.add(a,b);
-
 				
-		int total = FunctionEx03.add(a,b);
+		int total = add(a,b);
 		System.out.println("두 수 합 : " + total);
 	}
 	
