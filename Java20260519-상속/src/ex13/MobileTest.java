@@ -9,8 +9,7 @@ public class MobileTest {
 	Mobile m2 = new Otab("Otab", 1000, "XYZ-20");
 	
 	// 생성된 객체의 정보를 출력한다.(printMobile() 호출)
-	System.out.println("Mobile\t Battery\t OS");
-	System.out.println("------------------------------------"); 
+	printTitle();
 	printMobile(m1);
 	printMobile(m2);
 		
@@ -20,8 +19,7 @@ public class MobileTest {
 	
 	// 10분 충전 후 객체 정보를 출력한다.(printMobile() 호출)
 	System.out.println("\n[10분 충전]");
-	System.out.println("Mobile\t Battery\t OS");
-	System.out.println("------------------------------------");
+	printTitle();
 	printMobile(m1);
 	printMobile(m2);
 	
@@ -31,8 +29,7 @@ public class MobileTest {
 	
 	// 5분 통화 후 객체 정보를 출력한
 	System.out.println("\n[5분 통화]");
-	System.out.println("Mobile\t Battery\t OS");
-	System.out.println("------------------------------------");
+	printTitle();
 	printMobile(m1);
 	printMobile(m2);
 	}
@@ -43,6 +40,8 @@ public class MobileTest {
 	}
 	
 	public static void printTitle() {
+		System.out.println("Mobile\t Battery\t OS");
+		System.out.println("------------------------------------");
 	} 
 
 }
