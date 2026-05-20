@@ -19,6 +19,10 @@ public class ClassEx01 {
 		int age3 = 18;
 		String phone3 = "010-4444-5555";
 		
+		String name4 = "까미";
+		int age4 = 6;
+		String phone4 = "010-9999-5555";
+		
 		System.out.println("이름 : " + name1);
 		System.out.println("나이 : " + age1);
 		System.out.println("전화번호 : " + phone1);
@@ -31,6 +35,10 @@ public class ClassEx01 {
 		System.out.println("이름 : " + name3);
 		System.out.println("나이 : " + age3);
 		System.out.println("전화번호 : " + phone3);
+
+		System.out.println("이름 : " + name4);
+		System.out.println("나이 : " + age4);
+		System.out.println("전화번호 : " + phone4);
 		
 		
 	}

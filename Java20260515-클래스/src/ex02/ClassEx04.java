@@ -7,19 +7,16 @@ public class ClassEx04 {
 
 	public static void main(String[] args) {
 		
-		int age;
-		age = 20;
-		
-		int age2 = 20;
-		
 		//객체 생성, 인스턴스 생성
 		Member hong = new Member("홍길동", 20, "010-1111-2222"); 
-		
 		hong.memberInfo();
 		
 		Member lee = new Member("이순신", 20, "010-2222-3333");
 		
 		lee.memberInfo();
+		
+		Member kim = new Member();
+		kim.memberInfo();
 	}
 }
 
@@ -36,6 +33,10 @@ class Member{
 	private int age;
 	private String phone;	
 	
+	
+	public Member() {
+		// TODO Auto-generated constructor stub
+	}
 	//생성자 -> 멤버변수 초기화 용도
 	public Member(String n,int a, String p) {
 		name = n;
@@ -48,5 +49,4 @@ class Member{
 		System.out.println("나이 : " + age);
 		System.out.println("전화번호 : " + phone);
 	}
-	
 }

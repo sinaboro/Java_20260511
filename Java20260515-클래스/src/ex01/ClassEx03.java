@@ -38,5 +38,24 @@ class Member{
 		System.out.println("나이 : " + age);
 		System.out.println("전화번호 : " + phone);
 	}
-	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
