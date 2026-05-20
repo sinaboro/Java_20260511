@@ -43,8 +43,4 @@ public abstract class Mobile {
 	public void setOsType(String osType) {
 		this.osType = osType;
 	}
-	
-	
-	
-	
 }
