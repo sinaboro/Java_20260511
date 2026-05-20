@@ -20,7 +20,7 @@ public class BreakExam01 {
 			// Math.random() : 0.0 ~ 0.999...
 			// * 6 : 0 ~ 5.xxx
 			// +1 : 1 ~ 6
-			int num = (int)(Math.random()*6) + 1;
+			int num = (int)(Math.random()*45) + 1;  
 			
 			// 나온 주사위 값을 sum에 누적
 			// sum = sum + num;

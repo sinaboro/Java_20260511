@@ -10,8 +10,7 @@ public class ArrayEx05 {
 
 	public static void main(String[] args) {
 			
-		//1. 배열 10개 방에 랜덤하게 1~100사이 값을 저장
-		
+		//1. 배열 10개 방에 랜덤하게 1~100사이 값을 저장		
 		int[] number = new int[10];
 		
 		System.out.println("값 저장 > ");
@@ -51,13 +50,14 @@ public class ArrayEx05 {
 		System.out.println("평균 : " + avg);
 		System.out.println();
 		
+		
 		//4. 배열 값 정렬(오름차순)
 		for(int i=0; i<number.length; i++) {
 			for(int j=0; j<number.length-1; j++) {
 				if(number[j] > number[j+1]) {
-					int tmp = number[j];
+					int temp = number[j];
 					number[j] = number[j+1];
-					number[j+1] = tmp;
+					number[j+1] = temp;							
 				}
 			}
 		}
