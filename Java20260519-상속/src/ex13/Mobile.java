@@ -4,7 +4,7 @@ package ex13;
 public abstract class Mobile {
 
 	private String mobileName;
-	private int batterySize;
+	private int batterySize; //500
 	private String osType;
 	
 	public Mobile() {		
@@ -18,15 +18,7 @@ public abstract class Mobile {
 		this.mobileName = mobileName;
 		this.batterySize = batterySize;
 		this.osType = osType;
-	}
-
-	public String getMobileName() {
-		return mobileName;
-	}
-
-	public void setMobileName(String mobileName) {
-		this.mobileName = mobileName;
-	}
+	}	
 
 	public int getBatterySize() {
 		return batterySize;
@@ -36,11 +28,12 @@ public abstract class Mobile {
 		this.batterySize = batterySize;
 	}
 
-	public String getOsType() {
-		return osType;
-	}
 
-	public void setOsType(String osType) {
-		this.osType = osType;
+	@Override
+	public String toString() {
+		return mobileName+"\t" +   batterySize + "\t"+ osType;
 	}
+	
+	
+	
 }
