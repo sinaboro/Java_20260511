@@ -26,6 +26,7 @@ public class Ltab extends Mobile {
 		//1분 충전 시 배터리 10증가 
 		int batter = getBatterySize();  //500
 		batter += time * 10;
+		setBatterySize(batter);	
 	}
 
 }

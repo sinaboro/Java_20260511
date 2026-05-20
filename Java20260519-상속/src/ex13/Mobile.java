@@ -31,7 +31,7 @@ public abstract class Mobile {
 
 	@Override
 	public String toString() {
-		return mobileName+"\t" +   batterySize + "\t"+ osType;
+		return mobileName+"\t" +   batterySize + "\t\t"+ osType;
 	}
 	
 	
