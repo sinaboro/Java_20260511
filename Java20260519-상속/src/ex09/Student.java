@@ -10,13 +10,16 @@ public class Student extends Human{
 
 	public Student(String name, int age, int height, int weight
 			, String number, String major) {
+
+		super(name, age,height, weight );
 		
-		
+		this.number = number;
+		this.major = major;
 	}
 	
 	@Override
 	public String printInformation() {
 		
-		return null;
+		return  super.printInformation() +'\t'+  number + '\t' + major;
 	}
 }

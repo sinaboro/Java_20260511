@@ -20,7 +20,7 @@ public class Human {
 	
 	public String printInformation() {
 		
-		return null;
+		return name +'\t'+ age +'\t'+ height +'\t'+ weight;
 	}
 	
 }

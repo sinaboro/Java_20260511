@@ -17,7 +17,9 @@ public class StudentTest {
 		arrays[1] = new Student(	"고길동" ,21, 181, 72, "201102", "건축");
 		arrays[2] = new Student(	"박길동" ,22, 175, 65, "201103", "컴공");
 		
-	
+		for(int i=0; i<arrays.length; i++) {
+			System.out.println(arrays[i].printInformation());
+		}
 		
 	}
 
