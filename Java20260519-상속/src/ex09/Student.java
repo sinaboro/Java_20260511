@@ -2,8 +2,8 @@ package ex09;
 
 public class Student extends Human{
 
-	private String number;
-	private String major;
+	static String number;
+	static String major;
 	
 	public Student() {		
 	}
