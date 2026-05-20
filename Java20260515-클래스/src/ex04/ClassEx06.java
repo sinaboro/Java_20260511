@@ -11,8 +11,6 @@ public class ClassEx06 {
 			
 		Student st1 = new Student("이순신", 79, 45, 99);
 		
-		
-		
 		System.out.println(st1.getName() + ": ");
 		System.out.println("총점 : " + st1.total());
 		System.out.println("평균 : " + st1.avg());
