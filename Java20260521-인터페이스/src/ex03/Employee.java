@@ -6,6 +6,18 @@ public abstract class Employee {
 	private String department; //부서명
 	private int salary;  //급여
 	
+	public String getName() {
+		return name;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public String getDepartment() {
+		return department;
+	}
+
 	int getSalary(){
 		return salary;
 	}

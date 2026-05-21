@@ -18,6 +18,17 @@ public class Company {
 	public static void printEmployee(Employee[] emp, boolean isTax){
 		// 객체의 정보를 출력한다.(실행 결과를 참조)
 		// isTax 의 참/거짓 여부에 따라서 텍스 출력 여부를 결정하여 처리한다
-		
+		if(isTax) {
+			
+		}else {
+			System.out.println("name\t department\t salary\t extra\t pay");
+			System.out.println("--------------------------------------------");
+			for(int i=0; i<emp.length; i++) {
+				System.out.print(emp[i].getName() + "\t");
+				System.out.print(emp[i].getDepartment() + "\t");
+				System.out.print(emp[i].getSalary() + "\t");
+				System.out.println();
+			}
+		}
 	}
 }
