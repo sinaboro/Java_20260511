@@ -5,8 +5,13 @@ public class KakaoPay implements Payment{
 
 	@Override
 	public void pay(int money) {
-		// TODO Auto-generated method stub
+		System.out.println("KakaoPay로 " + money +"원 결제");
 		
+	}
+	
+	@Override
+	public void coupon() {
+		System.out.println("10% 할인 적용");
 	}
 
 }
