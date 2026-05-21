@@ -6,6 +6,14 @@ public abstract class Employee {
 	private String department; //부서명
 	private int salary;  //급여
 	
+	int getSalary(){
+		return salary;
+	}
+	
+	void setSalary(int salary){
+		this.salary = salary;
+	}
+	
 	public Employee() {	
 	}
 
