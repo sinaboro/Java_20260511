@@ -53,8 +53,8 @@ class Account{
 		return balance;
 	}
 
-	public void setBalance(int b) {
-		balance = b;
+	public void setBalance(int balance) {
+		this.balance = balance;
 	}
 	
 
@@ -64,9 +64,6 @@ class Account{
 	  * 함수명 : set + 멤버변수명 -> 카멜표기법
 	  * 매개변수: (멤버변수 자료형)
 	  */
-	
-	
-	
 	void deposit(int amount) { //입금		
 		if(amount>0)
 			balance += amount;

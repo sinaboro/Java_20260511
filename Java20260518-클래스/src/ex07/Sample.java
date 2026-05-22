@@ -22,8 +22,8 @@ public class Sample {
 		System.out.println(c1.car1);
 		c1.func();
 		
-		Bus bus1 = new Bus();
-		bus1.func2();
+		
+		Bus.func2();
 		
 		System.out.println(Bus.bus1);
 		Bus.func2();

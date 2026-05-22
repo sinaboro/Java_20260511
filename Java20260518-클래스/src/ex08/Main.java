@@ -17,7 +17,7 @@ public class Main {
 		s2.showInfo();
 		
 		//클래스 메소드 호출
-		Student.showStudentCount();
+		s4.showStudentCount();
 		
 	}
 

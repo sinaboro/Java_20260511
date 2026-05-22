@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Dog d = new Dog("로이");
+		Dog d = new Dog("로이" , 10,173);
 		
 		d.sleep();
 		d.eat();

@@ -46,9 +46,7 @@ class Person{
 		no = no +1;
 		//age = age +1; xxxxx
 	}
-	
-	
-	
+		
 	Person(String name, int age){
 		this.name = name;
 		this.age = age;

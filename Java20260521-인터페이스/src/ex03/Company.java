@@ -21,7 +21,7 @@ public class Company {
 		if(isTax) {
 			
 		}else {
-			System.out.println("name\t department\t salary\t extra\t pay");
+			System.out.println("name\t department\t salary");
 			System.out.println("--------------------------------------------");
 			for(int i=0; i<emp.length; i++) {
 				System.out.print(emp[i].getName() + "\t");

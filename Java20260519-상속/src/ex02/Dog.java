@@ -6,9 +6,9 @@ public class Dog extends Animal{
 		System.out.println("Dog 객체 생성");
 	}
 	
-	Dog(String name){
+	Dog(String name, int age, int height){
 		//상위 클래스 생성자를 통해서 값을 전달
-		super(name);
+		super(name, age, height);
 	}
 	
 	void bark() {

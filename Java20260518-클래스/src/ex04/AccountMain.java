@@ -46,15 +46,13 @@ class Account{
 	//정보은닉, 멤버변수는 외부 공개하지 않는다!!!
 	private int balance;
 	
-
-	Account(){
-		
-	}
-
-	Account(int b){
-		balance = b;
+	public Account() {	
 	}
 	
+	public Account(int balance) {
+		this.balance = balance;
+	}
+
 	public int getBalance() {
 		return balance;
 	}
