@@ -4,6 +4,16 @@ public class BoxMain {
 
 	public static void main(String[] args) {
 		
+		Car car = new Car();
+		car.func();
+		
+		Box box = new Box();
+		
+		box.setItem(car);
+		Object obj2 =box.getItem();
+		
+		Car car2 = (Car)obj2;
+		car2.func();
 		
 	}
 }

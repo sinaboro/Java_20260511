@@ -2,12 +2,13 @@ package ex04;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class LinkedListEx01 {
 	
 	public static void main(String[] args) {
 		
-		LinkedList<Integer> list = new LinkedList<>();
+		List<Integer> list = new LinkedList<>();
 		list.add(new Integer(10));
 		list.add(20);
 		list.add(30);

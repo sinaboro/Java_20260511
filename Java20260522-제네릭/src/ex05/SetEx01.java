@@ -2,6 +2,7 @@ package ex05;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class SetEx01 {
 
@@ -11,7 +12,7 @@ public class SetEx01 {
 		 * 중복 허용 불가
 		 * 순서 보장 안됨
 		 */
-		Set<String> set = new HashSet<>();
+		Set<String> set = new TreeSet<>();
 		set.add("kor");
 		set.add("eng");
 		set.add("math");
